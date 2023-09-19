@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav {
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  min-width: 600px;
+  position: relative;
+}
+.nav label {
+  line-height: 80px;
+  color: aliceblue;
+  margin: 0 50px;
+  font-size: 35px;
+}
+.nav ul {
+  float: right;
+  margin-right: 30px;
+  line-height: 80px;
+}
+.nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.nav ul li a {
+  color: aliceblue;
+  text-transform: capitalize;
+  font-size: 20px;
+  transition: 0.5s all;
+}
+a.active,
+a:hover {
+  background-color: orangered;
+  padding: 7px 13px;
+  border-radius: 5px;
+}
+span {
+  text-transform: uppercase;
+  color: orangered;
+  font-weight: bold;
+}
+.fa {
+  font-size: 30px;
+  color: aliceblue;
+  cursor: pointer;
+  line-height: 80px;
+  float: right;
+  margin-right: 60px;
+  /* display: none; */
+  display: block;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+}
+img {
+  padding-top: 20px;
+
+  width: 500px;
+  transition: 0.5s ease;
+}
+img:hover {
+  transform: scale(1.1);
+}
+.mystyle {
+  display: inline;
+}
+@media (max-width: 947px) {
+  .nav {
+    position: absolute;
+    right: 0px;
+    width: 100% !important;
+    margin-right: 0 !important;
+    /* height: 400px; */
+    margin-right: 0;
+  }
+  .fa {
+    display: block;
+  }
+  ul {
+    background-color: #eee;
+    width: 100%;
+    height: 100vh;
+    margin-right: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  ul li a {
+    color: orange !important;
+    /* border: 2px solid red; */
+  }
+  .nav label {
+    margin: 0 70px;
+  }
+  img {
+    width: 300px;
+    padding-top: 10rem;
+  }
+  .body-text {
+    margin-top: 7rem;
+  }
+}
+/* Add this CSS inside a <style> element or in an external CSS file */
